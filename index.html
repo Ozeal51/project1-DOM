@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JohoAutos Cart</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="cart-wrapper">
+            <!-- Cart Header -->
+            <div class="cart-header">
+                <h1>🛒 JohoAutos Cart</h1>
+                <p class="cart-count">You have <span id="itemCount">3</span> Vehicles in your cart</p>
+            </div>
+
+            <!-- Cart Items Container -->
+            <div class="cart-items" id="cartItems">
+                <!-- Cart Item 1 -->
+                <div class="cart-item" data-id="1">
+                    <div class="item-image">
+                        <img src="./Images/benz.jpg" alt="Headphones">
+                    </div>
+                    
+                    <div class="item-details">
+                        <h3 class="item-name">2019 c300 Mercedes Benz </h3>
+                        <p class="item-description">Premium Car with luxury lifestyle</p>
+                        <p class="item-price">#<span class="price">35,000,000</span></p>
+                    </div>
+
+                    <div class="item-actions">
+                        <button class="like-btn" data-id="1">
+                            <span class="heart">♡</span>
+                        </button>
+                        
+                        <div class="quantity-controls">
+                            <button class="qty-btn minus" data-id="1">-</button>
+                            <span class="quantity" data-id="1">1</span>
+                            <button class="qty-btn plus" data-id="1">+</button>
+                        </div>
+                        
+                        <button class="delete-btn" data-id="1">
+                            <span>🗑️</span> Remove
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Cart Item 2 -->
+                <div class="cart-item" data-id="2">
+                    <div class="item-image">
+                        <img src="./Images/bmws.jpg" alt="Watch">
+                    </div>
+                    
+                    <div class="item-details">
+                        <h3 class="item-name">2019 BMW 3 Series</h3>
+                        <p class="item-description">Sport version with full option</p>
+                        <p class="item-price">#<span class="price">25,000,000</span></p>
+                    </div>
+
+                    <div class="item-actions">
+                        <button class="like-btn" data-id="2">
+                            <span class="heart">♡</span>
+                        </button>
+                        
+                        <div class="quantity-controls">
+                            <button class="qty-btn minus" data-id="2">-</button>
+                            <span class="quantity" data-id="2">1</span>
+                            <button class="qty-btn plus" data-id="2">+</button>
+                        </div>
+                        
+                        <button class="delete-btn" data-id="2">
+                            <span>🗑️</span> Remove
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Cart Item 3 -->
+                <div class="cart-item" data-id="3">
+                    <div class="item-image">
+                        <img src="./Images/cmrys.jpg" alt="">
+                    </div>
+                    
+                    <div class="item-details">
+                        <h3 class="item-name">2020 Toyota Camry SE</h3>
+                        <p class="item-description">Road master sport car</p>
+                        <p class="item-price">#<span class="price">35,000,000</span></p>
+                    </div>
+
+                    <div class="item-actions">
+                        <button class="like-btn" data-id="3">
+                            <span class="heart">♡</span>
+                        </button>
+                        
+                        <div class="quantity-controls">
+                            <button class="qty-btn minus" data-id="3">-</button>
+                            <span class="quantity" data-id="3">1</span>
+                            <button class="qty-btn plus" data-id="3">+</button>
+                        </div>
+                        
+                        <button class="delete-btn" data-id="3">
+                            <span>🗑️</span> Remove
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cart Summary -->
+            <div class="cart-summary">
+                <div class="summary-row">
+                    <span>Subtotal:</span>
+                    <span class="subtotal">#<span id="subtotal">95,000,000</span></span>
+                </div>
+                <div class="summary-row">
+                    <span>Tax (10%):</span>
+                    <span class="tax">#<span id="tax">9,500,000</span></span>
+                </div>
+                <div class="summary-row total-row">
+                    <span>Total:</span>
+                    <span class="total">#<span id="total">104,500,000</span></span>
+                </div>
+                
+                <button class="checkout-btn">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
